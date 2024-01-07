@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-outlet flex-col items-center justify-between p-24">
       <div className="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
         <div></div>
         <h3 className="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">

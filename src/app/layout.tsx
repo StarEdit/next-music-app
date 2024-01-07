@@ -1,8 +1,9 @@
 import { lusitana } from "@/assets/font";
 import type { Metadata } from "next";
 
+import { Header } from "@/components";
 import "@/styles/globals.css";
-import Provider from "./Provider";
+import Providers from "./Providers";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={lusitana.className}>
-        <Provider>{children}</Provider>
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   );
